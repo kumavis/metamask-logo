@@ -9,7 +9,7 @@ module.exports = function(opts){
     var canvas = document.createElement('canvas')
     var context = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
     if (!context) {
-      console.error('MetamaskLogo - WebGL not supported.')
+      console.warn('MetamaskLogo - WebGL not supported.')
       return
     }
   } catch (err) {
@@ -83,7 +83,7 @@ module.exports = function(opts){
   })
 
   return {
-    // proeprties
+    // properties
     canvas: renderCanvas,
     renderer: renderer,
     scene: scene,
