@@ -24,6 +24,6 @@
     ]
   },
   "devDependencies": {
-    "uglifyify": "^3.0.1"
+    "uglifyify": "^4.0.3"
   }
 }
